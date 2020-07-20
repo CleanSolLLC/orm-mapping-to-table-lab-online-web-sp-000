@@ -41,7 +41,8 @@ class Student
     
     def self.create(student)
       attributes.each do |key, value|
-      Student.new(self.send("#{key}=", value))
+      student = (self.send("#{key}=", value))
+      binding.pry
       end
     end
 
