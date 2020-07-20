@@ -29,10 +29,10 @@ class Student
     
     def save
       sql = <<-SQL
-        INSERT INTO students (id, name, grade)
+        INSERT INTO students (:id, :name, :grade)
         VALUES (?, ?, ?)
       SQL
-      binding.pry
+      binding.
       
       DB[:conn].execute(sql, self.name, selfgrade)
     end
