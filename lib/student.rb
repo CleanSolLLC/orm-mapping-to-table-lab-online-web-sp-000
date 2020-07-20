@@ -32,8 +32,9 @@ class Student
         INSERT INTO students (id, name, grade)
         VALUES (?, ?, ?)
       SQL
+      binding.pry
       
-      DB[:conn].execute(sql, name, grade)
+      DB[:conn].execute(sql, self.name, selfgrade)
     end
 
 end
