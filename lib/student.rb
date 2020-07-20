@@ -39,9 +39,8 @@ class Student
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
     end
     
-    def self.create(student_info)
-      student_info.each do |key, value|
-      Student.new(value)
+    def self.create(name:, grade:)
+      Student.new(name, grade)
       binding.pry
       end
     end
