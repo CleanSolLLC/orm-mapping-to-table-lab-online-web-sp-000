@@ -11,7 +11,7 @@ class Student
   
   def initialize(attributes)
     attributes.each do |key, value|
-    self.send("#{key}=" value)
+    self.send("#{key}=", value)
   end
     
   def self.create_table
