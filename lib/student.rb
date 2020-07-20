@@ -1,6 +1,16 @@
 class Student
 
-  # Remember, you can access your database connection anywhere in this class
-  #  with DB[:conn]  
-  
+  attr_reader :id, :name
+  attr_accessor :grade
+
+  def initialize(name, grade)
+    @name = name
+    @grade
+    
+    self.create_table
+      
+      SQL<<-
+        (CREATE TABLE students IF NOT EXISTS)
+
 end
+  
