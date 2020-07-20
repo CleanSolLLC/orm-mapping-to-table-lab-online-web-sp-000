@@ -40,10 +40,8 @@ class Student
     end
     
     def self.create(student_info)
-      student_info.each do |key, value|
-      Student.send(("#{key}="), value)
+      Student.new(student_info)
       binding.pry
-      end
     end
 
 end
