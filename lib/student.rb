@@ -33,7 +33,7 @@ class Student
         VALUES (?, ?, ?)
       SQL
       
-      DB[:conn].execute(sql, self.id, self.name, selfgrade)
+      DB[:conn].execute(sql, self.id, self.name, self.grade)
     end
 
 end
