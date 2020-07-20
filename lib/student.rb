@@ -5,11 +5,11 @@ class Student
 
   def initialize(name, grade)
     @name = name
-    @grade
+    @grade = grade
     
     self.create_table
       
-      SQL<<-
+      sql = SQL <<-
         (CREATE TABLE students IF NOT EXISTS)
 
 end
