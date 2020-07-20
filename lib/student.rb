@@ -9,7 +9,7 @@ class Student
     
     self.create_table
       
-      sql = SQL <<-
+      sql = << -SQL
         (CREATE TABLE students IF NOT EXISTS)
 
 end
