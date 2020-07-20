@@ -38,6 +38,8 @@ class Student
     end
     
     def self.create(student)
+      student.each do |key, value|
+        self.send
       binding.pry
     end
 
