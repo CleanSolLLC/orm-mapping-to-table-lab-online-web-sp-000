@@ -41,7 +41,7 @@ class Student
     
     def self.create(student_info)
       student_info.each do |key, value|
-      Studen.new(key[value])
+      Studen.new(value)
       binding.pry
       end
     end
